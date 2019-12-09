@@ -1,0 +1,40 @@
+require:
+  - rubocop-performance
+  - rubocop-rake
+  - rubocop-rails
+  - rubocop-rspec
+  - rubocop-minitest
+
+AllCops:
+  Exclude:
+    - "bin/*"
+    - "db/schema.rb"
+
+Bundler/OrderedGems:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+  Max: 15
+
+Metrics/BlockLength:
+  Enabled: false
+  Max: 25
+
+Metrics/LineLength:
+  Enabled: false
+  Max: 80
+
+Metrics/MethodLength:
+  Enabled: false
+  Max: 10
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: true
+  EnforcedStyle: never
